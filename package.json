@@ -1,0 +1,23 @@
+{
+  "name": "BattleShip",
+  "version": "1.0.0",
+  "description": "",
+  "repository": "",
+  "main": "main.js",
+  "scripts": {
+    "build": "webpack",
+    "server": "",
+    "test": "",
+    "lint": ""
+  },
+  "author": "malyfko",
+  "license": "",
+  "dependencies": {
+    "babel-core": "^6.26.0",
+    "babel-loader": "^6.4.1",
+    "babel-preset-env": "^1.6.1",
+    "babel-preset-es2016": "^6.24.1",
+    "path": "^0.12.7",
+    "webpack": "^1.15.0"
+  }
+}
