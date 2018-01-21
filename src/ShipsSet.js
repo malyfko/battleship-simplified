@@ -45,6 +45,7 @@ class ShipsSet {
 
   assignPlacement(ship) {
     this.shipsPlacement[ship.x][ship.y] = ship;
+    console.log('Hello warsawjs');
   }
 }
 
