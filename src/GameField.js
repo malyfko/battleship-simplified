@@ -1,15 +1,12 @@
 import Cell from './Cell';
-import ShipsSet from './ShipsSet';
 
-const GameField = (type) => {
+const GameField = (type, shipsSet, cells) => {
   const gameField = document.createElement('div');
   gameField.className = `field ${type}`;
 
-  const shipsSet = new ShipsSet();
-
-  shipsSet.shipsPlacement.forEach((row) => {
-    row.forEach((cell) => {
-      gameField.append(new Cell(type, cell === 1).hmtlNode);
+  shipsSet.shipsPlacement.forEach((row, x) => {
+    row.forEach((cell, y) => {
+      gameField.append(new Cell(x, y, type, cell, cells[x][y].attempted).hmtlNode);
     });
   });
 
